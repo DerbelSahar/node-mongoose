@@ -28,7 +28,8 @@ connect.then((db) => {
                 });
                 return dish.save(); //returns the dish
             })
-            .then(() => {
+            .then((dish) => {
+                console.log(dish);
                 return Dishes.remove({});
  
             })
